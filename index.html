@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#303c2e">
+  <meta name="description" content="Invitación a la boda de Yani y Jose, el 7 de febrero de 2027 en Maipú, Mendoza.">
+  <title>Yani &amp; Jose · 07.02.27</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script src="invitacion.js" defer></script>
+</head>
+<body data-page="sobre">
+  <main class="site">
+    <section id="sobre" class="screen" aria-label="Sobre de la invitación">
+      <div class="art envelope">
+        <img id="sobre-imagen" src="assets/sobre.jpg" width="1080" height="1350" alt="">
+        <span class="flap" aria-hidden="true"></span>
+        <a id="abrir" class="hotspot" href="#invitacion" aria-label="Abrir la invitación de Yani y Jose"></a>
+      </div>
+    </section>
+
+    <article id="invitacion" class="screen" aria-labelledby="titulo" hidden>
+      <section class="art">
+        <h1 id="titulo" class="sr-only" tabindex="-1">¡Nos casamos! Yani y Jose · 7 de febrero de 2027</h1>
+        <img src="assets/portada.jpg" width="1366" height="1940" alt="Yani y Jose en un marco de encaje. Hallé luego al que ama mi alma. Cantares 3:4.">
+        <button class="hotspot music-notes" type="button" data-music aria-label="Reproducir música" aria-pressed="false"></button>
+      </section>
+
+      <section class="art">
+        <img src="assets/familia-y-lugares.jpg" width="1366" height="6060" loading="lazy" alt="" aria-hidden="true">
+        <div class="sr-only">
+          <h2>Querida familia y amigos</h2>
+          <p>Con la bendición de Dios y de nuestros padres, queremos que sean testigos de nuestro amor.</p>
+          <p>Con la ilusión de habernos encontrado y elegido, comenzamos una nueva etapa, deseando construir un hogar donde Dios sea nuestro fundamento y guíe nuestros pasos.</p>
+          <p>Ustedes son parte de nuestra historia y será una inmensa alegría que nos acompañen en este nuevo comienzo.</p>
+          <p>Padres de la novia, Marta Llanos y Demetrio Chacón. Padres del novio, Carmen Gutierrez y Victor Cardozo.</p>
+        </div>
+        <a class="hotspot itinerary-link" id="ver-itinerario" href="#itinerario" aria-label="Ver itinerario"></a>
+        <div class="sr-only">
+          <h2>Ceremonia</h2>
+          <p>Asamblea Cristiana, Ruta 14, 13169 Barrancas, Maipú.</p>
+        </div>
+        <a class="hotspot ceremony-link" href="https://www.google.com/maps/search/?api=1&amp;query=Asamblea%20Cristiana%2C%20Ruta%2014%2013169%2C%20Barrancas%2C%20Maip%C3%BA%2C%20Mendoza" target="_blank" rel="noopener noreferrer" aria-label="Buscar la ubicación de la ceremonia en Google Maps"></a>
+        <div class="sr-only">
+          <h2>Celebración</h2>
+          <p>Quinta Lauquén, Videla Aranda 5703, Cruz de Piedra, Maipú.</p>
+        </div>
+        <a class="hotspot party-link" href="https://www.google.com/maps/search/?api=1&amp;query=Quinta%20Lauqu%C3%A9n%2C%20Videla%20Aranda%205703%2C%20Cruz%20de%20Piedra%2C%20Maip%C3%BA%2C%20Mendoza" target="_blank" rel="noopener noreferrer" aria-label="Buscar la ubicación de la celebración en Google Maps"></a>
+      </section>
+
+      <section class="art" aria-labelledby="confirmacion">
+        <img src="assets/vestimenta.jpg" width="1366" height="1980" loading="lazy" alt="Retrato de los novios. Código de vestimenta formal. Confirmación de asistencia hasta el 15 de diciembre.">
+        <h2 id="confirmacion" class="sr-only">Confirmación de asistencia</h2>
+        <form class="rsvp" id="rsvp">
+          <label>Nombre completo <span aria-hidden="true">*</span>
+            <input name="nombre" autocomplete="name" maxlength="120" pattern=".*\S.*" required>
+          </label>
+          <fieldset>
+            <legend>¿Confirmás tu asistencia a nuestra boda?</legend>
+            <label><input type="radio" name="asistencia" value="si" required> Acepto con mucho gusto</label>
+            <label><input type="radio" name="asistencia" value="no"> Lamentablemente no puedo asistir</label>
+            <label><input type="radio" name="asistencia" value="pareja"> Asistiré en pareja</label>
+          </fieldset>
+          <label>Nombre de tu +1
+            <input name="acompanante" maxlength="120">
+          </label>
+          <label>Dejanos tus buenos deseos ♡
+            <textarea name="mensaje" rows="3" maxlength="500"></textarea>
+          </label>
+          <div class="rsvp-actions" role="group" aria-label="Elegí a quién enviarle tu confirmación">
+            <button type="submit" name="destino" value="novia" aria-describedby="rsvp-nota">WhatsApp de la novia</button>
+            <button type="submit" name="destino" value="novio" aria-describedby="rsvp-nota">WhatsApp del novio</button>
+          </div>
+          <p id="rsvp-nota">Elegí uno de los dos y enviá el mensaje desde WhatsApp.</p>
+        </form>
+      </section>
+
+      <section class="art countdown" aria-label="Cuenta regresiva hasta la ceremonia">
+        <img src="assets/cierre.jpg" width="1366" height="768" loading="lazy" alt="Nuestro para siempre comienza en">
+        <span class="count-number" style="--x:39.04%" data-count="days" aria-hidden="true">00</span>
+        <span class="count-number" style="--x:46.12%" data-count="hours" aria-hidden="true">00</span>
+        <span class="count-number" style="--x:53.41%" data-count="minutes" aria-hidden="true">00</span>
+        <span class="count-number" style="--x:60.81%" data-count="seconds" aria-hidden="true">00</span>
+        <p id="tiempo-restante" class="sr-only"></p>
+      </section>
+
+      <nav class="footer-nav" aria-label="Navegación de la invitación">
+        <a href="#sobre">Volver al sobre</a>
+        <a href="#itinerario">Ver itinerario</a>
+      </nav>
+    </article>
+
+    <section id="itinerario" class="screen" aria-labelledby="titulo-itinerario" hidden>
+      <div class="art">
+        <h2 id="titulo-itinerario" class="sr-only" tabindex="-1">Nuestro itinerario · 7 de febrero de 2027</h2>
+        <img src="assets/itinerario.png" width="1080" height="1350" alt="">
+        <ul class="sr-only">
+          <li>17:00 · Ceremonia en Iglesia Barrancas</li>
+          <li>19:00 · Recepción, cóctel de bienvenida</li>
+          <li>20:00 · Ceremonia civil</li>
+          <li>21:30 · Cena</li>
+          <li>05:00 · Finalización</li>
+        </ul>
+        <a class="hotspot back-link" href="#invitacion" aria-label="Volver a la invitación"></a>
+      </div>
+      <nav class="footer-nav" aria-label="Navegación del itinerario">
+        <a href="#invitacion">Volver a la invitación</a>
+      </nav>
+    </section>
+  </main>
+
+  <button class="music-toggle" type="button" data-music aria-label="Reproducir música" aria-pressed="false" hidden>
+    <span aria-hidden="true">♫</span>
+  </button>
+  <p id="estado-musica" class="music-status" role="status"></p>
+  <audio id="cancion" preload="none" loop></audio>
+  <noscript>Activá JavaScript para abrir la invitación y ver el itinerario.</noscript>
+</body>
+</html>
