@@ -1,5 +1,5 @@
 // Colocá el MP3 autorizado en assets/ y configurá su ruta aquí.
-const musicFile = const musicFile = "musica.mp3";
+const musicFile = "musica.mp3";
 const ceremonyDate = new Date("2027-02-07T17:00:00-03:00");
 const pages = ["sobre", "invitacion", "itinerario"];
 const envelope = document.querySelector(".envelope");
